@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Adda Lee</title>
     <style>
-        div {text-align: left; margin-left: 100px}
+        div {text-align: left; margin-left: 100px;}
+        th {border: 1px solid black;}
+        td {border: 1px solid black;}
     </style>
 </head>
 
@@ -22,9 +24,9 @@
         </div>
 
         <div style="text-align: center; margin: 0">
-            <table border="1" style="border:1px solid black; margin-left:auto;margin-right:auto;"><!--Mark's comment 8/18: You can delete the border= attribute since you do the same thing in the inline style.-->
+            <table style="border:1px solid black; margin-left:auto;margin-right:auto;"> <!--Mark's comment 8/18: You can delete the border= attribute since you do the same thing in the inline style.-->
                 
-               <tr><th colspan="7">Stats at a Glance:</th> </tr><!--Mark's comment 8/18: This works, but I do only see 6 columns in this table...-->
+               <tr><th colspan="6">Stats at a Glance:</th> </tr><!--Mark's comment 8/18: This works, but I do only see 6 columns in this table...-->
            
                <tr>
                    <th>Species:</th>
@@ -46,8 +48,10 @@
            </div>
 
 
-        <table><p style="border: 1px; border-style: solid; border-color:black;" ><!--Mark's comment 8/18: This works in the browser but that's because the browser is very forgiving. Technically, you need tr tags to have the th and td tags nested in. Also, I'm not sure th and td are supposed to be in the same row, though, I think it's probably okay. Oh, also also, p tags should encase text and not other elements that specify some sort of type of object, so like you should put paragraphs in the th and td elements rather than putting the th and td elements in a paragraph. Make sense?-->
-            <th><h2>About P. Melanochrysum</h2><em>Rare Tropical Foliage </em> </th>
+        <table style="border: 1px; border-style: solid; border-color:black;">
+            <tr>
+            <th><h2>About P. Melanochrysum</h2><em>Rare Tropical Foliage </em> </th> ><!--Mark's comment 8/18: This works in the browser but that's because the browser is very forgiving. Technically, you need tr tags to have the th and td tags nested in. Also, I'm not sure th and td are supposed to be in the same row, though, I think it's probably okay. Oh, also also, p tags should encase text and not other elements that specify some sort of type of object, so like you should put paragraphs in the th and td elements rather than putting the th and td elements in a paragraph. Make sense?-->
+           
     
             <td>Philodendron melanochrysum plants, also commonly known as black-gold philodendron, are a rare type of vining philodendron that have become popular as houseplants due to their gorgeous foliage.
             Their velvet leaves come in shades of dark green with brilliantly contrasted yellow veins and can get as large as 3-5 ft tall, 1-2 ft wide (indoors); 12 ft tall, 8 ft wide (outdoors). 
@@ -57,7 +61,8 @@
             A mature P. Melanochrysum like the ones pictured about can be upwards of $1500. A single leaf cutting or propagation will be more afforadable starting at $50, however cuttings are even rarer to find.
             while these plants can be difficult to come across, they are surprisingly easy to care for once you finally have one in your possession.
             </td>
-        </p>
+        </tr>
+        
         </table>
 
         <p style="border: 1px; border-style: solid; border-color:black;" ></p>
@@ -76,5 +81,6 @@
 
      <h1>Additional Information & Care: <a href= "https://justhouseplants.com/philodendron-melanochrysum/">Additional Information & Care Tips</a>
      </h1>
+     </body>
 
 </html><!--Mark's comment 8/18: Missing the closing /body tag on line 79.-->
